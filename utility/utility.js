@@ -90,12 +90,10 @@ gambler(stake,goal,n)
 				    if(random_val<0.5)
 				    {
 					    cash++;
-					    wcount++;
-				    }
+					}
 				    else
 				    {
 					    cash--;
-					    lcount++;
 				    }
                 }
                 
@@ -105,8 +103,6 @@ gambler(stake,goal,n)
                     wcount++; 
                 } 
               
-			    
-			
 		console.log("No of times the Gambler wins is : "+wcount+" out of "+n);
         console.log("No of times the Gambler loose is : "+lcount+" out of "+n);
 
@@ -168,10 +164,26 @@ console.log("Total no of triplets is : "+count);
                   row =[];
               }
               return (board);
-          }     
+          },     
          
-         
+       // StopWatch program  
+           start() 
+          {
+             var time=new Date();
+            return time.getSeconds();
+          },
 
+        end() 
+        {
+            var time=new Date();
+           return time.getSeconds();
+        },
+      
+        elapsedTime(a,b)  
+        {
+            console.log("Elapsed time is :"+(b-a));
+	    },
+ 
 
 
 
